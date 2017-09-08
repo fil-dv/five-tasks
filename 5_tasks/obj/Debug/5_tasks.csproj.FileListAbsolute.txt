@@ -1,0 +1,11 @@
+D:\Dima\Programming\git\5_tasks\5_tasks\bin\Debug\5_tasks.exe.config
+D:\Dima\Programming\git\5_tasks\5_tasks\bin\Debug\5_tasks.exe
+D:\Dima\Programming\git\5_tasks\5_tasks\bin\Debug\5_tasks.pdb
+D:\Dima\Programming\git\5_tasks\5_tasks\obj\Debug\5_tasks.csprojResolveAssemblyReference.cache
+D:\Dima\Programming\git\5_tasks\5_tasks\obj\Debug\5_tasks.exe
+D:\Dima\Programming\git\5_tasks\5_tasks\obj\Debug\5_tasks.pdb
+D:\Dima\Programming\5_tasks\5_tasks\bin\Debug\5_tasks.exe.config
+D:\Dima\Programming\5_tasks\5_tasks\obj\Debug\5_tasks.exe
+D:\Dima\Programming\5_tasks\5_tasks\obj\Debug\5_tasks.pdb
+D:\Dima\Programming\5_tasks\5_tasks\bin\Debug\5_tasks.exe
+D:\Dima\Programming\5_tasks\5_tasks\bin\Debug\5_tasks.pdb
