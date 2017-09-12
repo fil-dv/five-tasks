@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Numerics;
+
 
 namespace _5_tasks
 {
@@ -19,13 +18,16 @@ namespace _5_tasks
             Console.WriteLine("-----------------");
             TestTask_4();
             Console.WriteLine("-----------------");
-            TestTask_5();
+           // TestTask_5();
             Console.WriteLine("-----------------");
         }
 
         static void TestTask_5()
         {
+            DateTime dt1 = DateTime.Now;
             Task_5.StrBuilder100();
+            DateTime dt2 = DateTime.Now;
+            Console.WriteLine(dt2 - dt1);
         }
 
         static void TestTask_4()
@@ -37,11 +39,20 @@ namespace _5_tasks
 
         static void TestTask_3()
         {
-            List<UInt64> list = Task_3.Fibo();
-            foreach (var item in list)
-            {
-                Console.Write("{0}, ", item);
+            List<BigInteger> list = Task_3.Fibo();
+            try
+            {                
+                for(int i = 0; i < list.Count; ++i)
+                {
+                    if (i == list.Count - 1) Console.WriteLine("{0}) {1}. ", i, list[i]);
+                    else  Console.WriteLine("{0}) {1}, ", i, list[i]);
+                }
             }
+            catch (OverflowException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
             Console.WriteLine();
         }
 

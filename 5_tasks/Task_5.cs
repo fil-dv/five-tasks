@@ -11,6 +11,7 @@ namespace _5_tasks
     {
         public static string StrBuilder100()
         {
+            List<string> listRes = new List<string>();
             string result = "";
             int count = 0;
             MyRes mr = new MyRes();
@@ -18,10 +19,22 @@ namespace _5_tasks
             {
                 mr = Calc();
                 if (mr.IntRes == 100)
-                    Console.WriteLine("{0}) {1} = {2}", count, mr.StrRes, mr.IntRes);
-                if (++count > 3000) break;
+                {
+                    if (!listRes.Contains(mr.StrRes))
+                    {
+                        listRes.Add(mr.StrRes);
+                    }
+                    //Console.WriteLine("{0}) {1} = {2}", count, mr.StrRes, mr.IntRes);
+                }
+                if (++count > 70000) break;
             }
             while (true);// (mr.IntRes != 100); 
+            int counter = 0;
+            foreach (var item in listRes)
+            {
+                counter++;
+                Console.WriteLine("{0}) {1} = 100;", counter, item);
+            }
             return result;            
         }
 
@@ -66,6 +79,7 @@ namespace _5_tasks
                     default:
                         if (i < list.Count - 1)
                         {
+                            //if (list[i] * 10 + list[i + 1] > 123) break;
                             list[i + 1] = list[i] * 10 + list[i + 1];
                         }
                         else
